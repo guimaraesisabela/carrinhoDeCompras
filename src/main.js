@@ -1,6 +1,5 @@
 import { createApp } from 'vue';
-import App from './views/App.vue';
-import Cart from './views/Cart.vue';
-import router from './router';
+import App from './App.vue';
+import router from './router/router';
 
 createApp(App).use(router).mount('#app');

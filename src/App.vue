@@ -35,14 +35,11 @@
       >
         Carregar mais produtos
       </button>
-      <button
-        type="button"
-        class="button moreProducts"
-        style="background-color: #39CC33; color: white; width: 15rem; height: 3rem; border: none; border-radius: 5px; margin-left: 3rem;"
-        @click="goToCart"
-      >
+      
+     <router-link
+      to="/cart">
        Ir para o carrinho 
-      </button>
+     </router-link>
     </div>
   </div>
 </template>
@@ -96,7 +93,7 @@ export default {
     },
     goToCart() {
       this.$router.push('/cart');
-      console.log("Ir para o carrinho!", this.cart);
+      // console.log("Ir para o carrinho!", this.cart);
     }
   },
   computed: {

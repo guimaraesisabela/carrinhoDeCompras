@@ -1,28 +1,28 @@
 <template>
     <div>
       <h1>Carrinho de Compras</h1>
-      <ul>
+      <!-- <ul>
         <li v-for="item in cart" :key="item.id">
           {{ item.name }} - R$ {{ item.price.toFixed(2) }}
         </li>
-      </ul>
+      </ul> -->
     </div>
   </template>
   
   <script>
-  export default {
-    data() {
-      return {
-        cart: []
-      };
-    },
-    created() {
-      //carrinho localstorage
-      const storedCart = localStorage.getItem('cart');
-      if (storedCart) {
-        this.cart = JSON.parse(storedCart);
-      }
-    }
-  };
+  // export default {
+  //   data() {
+  //     return {
+  //       cart: []
+  //     };
+  //   },
+  //   created() {
+  //     //carrinho localstorage
+  //     const storedCart = localStorage.getItem('cart');
+  //     if (storedCart) {
+  //       this.cart = JSON.parse(storedCart);
+  //     }
+  //   }
+  // };
   </script>
   
